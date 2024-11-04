@@ -3,7 +3,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbo",
-    "seed": "tsx -r dotenv/config app/seed/route.ts",
+    "seed": "node -r dotenv/config app/seed/route.js",
     "start": "next start"
   },
   "type": "module",
@@ -12,7 +12,7 @@
     "@tailwindcss/forms": "^0.5.7",
     "@vercel/postgres": "^0.8.0",
     "autoprefixer": "10.4.19",
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "next": "^15.0.0",
@@ -31,6 +31,10 @@
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "esbuild": "^0.24.0",
+    "eslint": "^9.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.2"
   },
